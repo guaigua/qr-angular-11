@@ -360,7 +360,7 @@
   <!-- Terminal -->
   <div class="terminal" [ngSwitch]="selection.value">
       <pre *ngSwitchDefault>ng generate component xyz
-        <div>
+        <div> Uno
           <qr-scanner
                   [debug]="false"
                   [canvasWidth]="1080" 
@@ -369,7 +369,8 @@
                   [updateTime]="500"> 
           </qr-scanner>
         </div>
-        <!-- <div><zxing-scanner></zxing-scanner></div> -->
+        <div> Dos </div>
+        <div><zxing-scanner></zxing-scanner></div>
       </pre>
       <pre *ngSwitchCase="'material'">ng add @angular/material</pre>
       <pre *ngSwitchCase="'pwa'">ng add @angular/pwa</pre>
