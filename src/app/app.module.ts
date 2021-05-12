@@ -5,6 +5,7 @@ import { NgQrScannerModule } from 'angular2-qrscanner';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ViewsModule } from './views/views.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     NgQrScannerModule,
-    ZXingScannerModule
+    ZXingScannerModule,
+    ViewsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
