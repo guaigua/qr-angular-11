@@ -360,23 +360,7 @@
     <!-- Terminal -->
     <div class="terminal" [ngSwitch]="selection.value">
         <pre *ngSwitchDefault>ng generate component xyz
-          <div> Uno
-            <qr-scanner
-                    [debug]="false"
-                    [canvasWidth]="1080" 
-                    [canvasHeight]="720" 
-                    [stopAfterScan]="true" 
-                    [updateTime]="500"> 
-            </qr-scanner>
-          </div>
-          <div> Dos </div>
-          <div class="kt-portlet__body">
-            <zxing-scanner *ngIf="scannerEnabled" #scanner (scanSuccess)="scanSuccessHandler($event)">
-            </zxing-scanner>
-            <button (click)="enableScanner()" *ngIf="!scannerEnabled" type="button" class="btn btn-success">LEER
-                OTRO</button>
-          </div>
-          <div>tres</div>
+
           <div><zxing-scanner></zxing-scanner></div>
         </pre>
         <pre *ngSwitchCase="'material'">ng add @angular/material</pre>
