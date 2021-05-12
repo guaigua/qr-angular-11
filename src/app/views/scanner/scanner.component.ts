@@ -28,7 +28,7 @@ export class ScannerComponent implements OnInit {
 
   onCodeResult(resultString: string): void {
     this.guestExist = null;
-    this.test = JSON.parse(resultString);
+    this.test = resultString;
     if (this.checkQRJSON(resultString)) {
       this.qrResult = JSON.parse(resultString);
       this.checkInGuest();
