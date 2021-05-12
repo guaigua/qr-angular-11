@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { ZXingScannerModule } from '@zxing/ngx-scanner';
 import { NgQrScannerModule } from 'angular2-qrscanner';
+import { ScannerComponent } from './scanner/scanner.component';
 
 
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    ScannerComponent
   ],
   imports: [
     CommonModule,
