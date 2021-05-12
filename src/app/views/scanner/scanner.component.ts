@@ -16,6 +16,7 @@ export class ScannerComponent implements OnInit {
   hasPermission: boolean;
   qrResult: Guest;
   guestExist: boolean;
+  test: any;
 
   constructor(private guestService: GuestService) {}
 
@@ -27,6 +28,7 @@ export class ScannerComponent implements OnInit {
 
   onCodeResult(resultString: string): void {
     this.guestExist = null;
+    this.test = JSON.parse(resultString);
     if (this.checkQRJSON(resultString)) {
       this.qrResult = JSON.parse(resultString);
       this.checkInGuest();
